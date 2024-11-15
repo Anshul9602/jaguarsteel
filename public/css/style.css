@@ -249,39 +249,39 @@ hr {
 /* Custom Container */
 @media only screen and (min-width: 1400px) {
   .container {
-    max-width: 1194px;
+    max-width: 90%;
   }
 }
 
 .custom-container {
-  max-width: 1450px;
+  max-width: 90%;
   width: 100%;
 }
 @media only screen and (min-width: 1800px) {
   .custom-container {
-    margin: 0 100px 0 auto;
+    margin: auto;
   }
 }
 @media only screen and (min-width: 1700px) and (max-width: 1799px) {
   .custom-container {
-    margin: 0 100px 0 auto;
+    margin: auto;
   }
 }
 @media only screen and (min-width: 1550px) and (max-width: 1699px) {
   .custom-container {
-    margin: 0 80px 0 auto;
-    max-width: 1300px;
+    margin: auto;
+    max-width: 90%;
   }
 }
 @media only screen and (min-width: 1300px) and (max-width: 1549px) {
   .custom-container {
-    margin: 0 30px 0 auto;
-    max-width: 1200px;
+    margin: auto;
+    max-width: 90%;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 1299px) {
   .custom-container {
-    margin: 0 auto 0;
+    margin:auto;
   }
 }
 
@@ -11953,10 +11953,11 @@ hr {
 }
 .funfact .about-counter-title {
   text-transform: uppercase;
-  font-size: 21px;
+  font-size: 15px;
   font-weight: 700;
   color: #ffffff;
   line-height: 1.5;
+ 
 }
 @media only screen and (max-width: 479px) {
   .funfact .about-counter-title {
@@ -12032,6 +12033,7 @@ hr {
   color: #717788;
   display: block;
   margin: 10px 0 0px;
+  min-height: 120px;
 }
 .single-team-social {
   display: flex;
@@ -12542,7 +12544,7 @@ hr {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 120px 0;
+  padding: 40px 0;
   position: relative;
   width: 180%;
   right: 78%;
@@ -12646,6 +12648,7 @@ hr {
   align-items: flex-end;
   justify-content: flex-end;
   row-gap: 60px;
+  height: 100%;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .system-bg2 {

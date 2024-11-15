@@ -1,3 +1,11 @@
+
+<style>
+   .single-team-content .desig {
+    
+    min-height: 0px;
+}
+</style>
+
 <!-- Funfact Section Start -->
 <div class="section-padding funfact" data-bg-image="<?php echo base_url(''); ?>/images/funfact/funfact-bg.png">
    <div class="container">
@@ -18,11 +26,11 @@
          <div class="col-lg-6">
             <div class="about-counter">
                <div class="about-counter-2 wow fadeIn" fadeIndata-wow-duration=".1s" data-wow-delay=".1s">
-                  <span class="about-counter-title"><font style="font-size:60px">2012</font><br />Year Established</span>
+                  <span class="about-counter-title"><font style="font-size:60px">20<span class="odometer" data-count-to="12"></span></font><br />Year Established</span>
                </div>
                <div class="about-counter-2 wow fadeIn" fadeIndata-wow-duration=".01s" data-wow-delay=".1s">
                   <span class="about-counter-title">
-                  <font style="font-size:60px">2024</font>
+                  <font style="font-size:60px">20<span class="odometer" data-count-to="24"></span></font>
                   Winner of the  Dun & Bradstreet Business Eminence award Singapore
                   </span>
                </div>
@@ -197,3 +205,107 @@
         </div>
     </div>
     <!-- Team Section End -->
+    <div class="section-padding team-bg gradient-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 wow fadeIn" fadeIndata-wow-duration=".1s" data-wow-delay=".1s">
+                    
+                    <div class="heading-one">
+                        <span class="heading-one-subtitle">HEY THERE</span>
+                        <h2 class="heading-one-title">Meet our Team </h2>
+                    </div>
+            
+                </div>
+            </div>
+            <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-2 row-cols-xs-2 row-cols-1 mb-n30">
+                <div class="col mb-30 wow fadeIn" fadeIndata-wow-duration=".1s" data-wow-delay=".1s">
+                    <div class="single-team">
+                        <div class="single-team-image">
+                            <img src="/images/team.webp" alt="TeamImage">
+                        </div>
+                        <div class="single-team-content">
+                            <a href="contact.html"><span class="name">Minhaz Mohsin</span></a>
+                            <span class="desig">Founder & CEO</span>
+                            <ul class="single-team-social">
+                                <li>
+                                    <a href="https://www.facebook.com/" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/" class="twitter"><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-30 wow fadeIn" fadeIndata-wow-duration=".01s" data-wow-delay=".1s">
+                    <div class="single-team">
+                        <div class="single-team-image">
+                            <img src="/images/team.webp" alt="TeamImage">
+                        </div>
+                        <div class="single-team-content">
+                            <a href="contact.html"><span class="name">John Jessy</span></a>
+                            <span class="desig">Head of Ideas</span>
+                            <ul class="single-team-social">
+                                <li>
+                                    <a href="https://www.facebook.com/" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/" class="twitter"><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-30 wow fadeIn" fadeIndata-wow-duration=".1s" data-wow-delay=".5s">
+                    <div class="single-team">
+                        <div class="single-team-image">
+                            <img src="/images/team.webp" alt="TeamImage">
+                        </div>
+                        <div class="single-team-content">
+                            <a href="contact.html"><span class="name">Jenny Alex</span></a>
+                            <span class="desig">Team Leader</span>
+                            <ul class="single-team-social">
+                                <li>
+                                    <a href="https://www.facebook.com/" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/" class="twitter"><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-30 wow fadeIn" fadeIndata-wow-duration=".1s" data-wow-delay=".7s">
+                    <div class="single-team">
+                        <div class="single-team-image">
+                            <img src="/images/team.webp" alt="TeamImage">
+                        </div>
+                        <div class="single-team-content">
+                            <a href="contact.html"><span class="name">Hizz Lui</span></a>
+                            <span class="desig">Designer</span>
+                            <ul class="single-team-social">
+                                <li>
+                                    <a href="https://www.facebook.com/" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/" class="twitter"><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

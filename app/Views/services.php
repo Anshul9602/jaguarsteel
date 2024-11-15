@@ -1,16 +1,22 @@
   <!---check --->
   <div class="service-two section-padding-bottom">
-        <div class="service-two-shape scene" style="transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden; pointer-events: inherit;">
-            <div class="shape shape-1" data-depth="0.08" style="transform: translate3d(-3px, 3.4px, 0px);"><img src="<?php echo base_url('images/shape/shape-20.png');?>" alt="Shape"></div>
-        </div>
+      
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <!-- Heading Start -->
-                    <div class="heading-one text-center wow fadeIn" data-wow-duration="0.1s" style="visibility: visible; animation-duration: 0.1s; margin-top:40px; animation-name: fadeIn;">
-                        <span class="heading-one-subtitle">Our Services</span>
-                        <h2 class="heading-one-title">What we offer</h2>
-                        <p>Jaguar offers comprehensive and end to end market making & sourcing services. We deal in following materials.</p>
+                    <div class="pb-4 text-center wow fadeIn" data-wow-duration="0.1s" style="visibility: visible; animation-duration: 0.1s; margin-top:40px; animation-name: fadeIn;">
+                        <div class="row">
+                            <div class="col-md-7"style="text-align: start;">
+                            <span class="heading-one-subtitle" style="text-align: start;">Our Services</span><br><br>
+                            <h2 class="heading-one-title"style="text-align: start;">What we offer</h2>
+                            </div>
+                            <div class="col-md-5">
+                            <p class="text-start">Jaguar offers comprehensive and end to end market making & sourcing services. We deal in following materials.</p>
+                            </div>
+                        </div>
+                   
+                       
                     </div>
                     <!-- Heading End -->
                 </div>
@@ -37,7 +43,7 @@
                         <br />       
                             <h4 class="title">Aluminium</h4>
                             <p> Zorba, Taint Tabor, Mix Aluminium,
-Motor scrap <br><br>
+Motor scrap 
 </p>
                         </div>
                     </div>
