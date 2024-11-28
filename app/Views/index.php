@@ -326,7 +326,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                      <h1 class="heading-one-title" style="text-transform: uppercase; color:#fff">Excellence in Metals <br> and Steel Trading</h1>
                   </div>
                </div>
-              <img class="desk" src="images/glob.png" alt=""style=" width: auto;left: -6%; bottom: 0px; position: absolute; ">
+               <img src="<?php echo base_url(''); ?>images/bgpng.png" class="desk" height="300"style="opacity: 0.9; width: auto; left: -0%; bottom: 0px; position: absolute;">
                <!-- Heading End -->
             </div>
             <div class="col-lg-6">
