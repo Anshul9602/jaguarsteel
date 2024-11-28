@@ -44,6 +44,7 @@
 /*----------------------------------------*/
 /*  1.1 Template default CSS
 /*----------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -51,9 +52,12 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Bai Jamjuree", sans-serif;
   font-size: 15px;
   background-color: #ffffff;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 2px;
 }
 
 .header-two{
@@ -118,7 +122,7 @@ p {
   font-weight: normal;
   color: #717788;
   margin-bottom: 15px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 p:last-child {
   margin-bottom: 0px;
@@ -608,18 +612,8 @@ hr {
 /*----------------------------------------*/
 /*  1.2 Button Styles CSS
 /*----------------------------------------*/
-.btn-style-one {
-  background: #081D55;
-  border: 0px;
- 
-  text-transform:capitalize;
-  font-weight: 400;
-  font-size: 16px;
-  color: #ffffff;
-  padding: 20px 45px;
-  line-height: 1;
-  position: relative;
-}
+
+
 @media only screen and (max-width: 767px) {
   .btn-style-one {
     padding: 16px 30px;
@@ -630,76 +624,15 @@ hr {
     padding: 15px 20px;
     font-size: 14px;
   }
-}
-.btn-style-one:focus {
-  box-shadow: none;
-}
-.btn-style-one::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #081D55;
-  opacity: 0;
- 
-  border-radius: 0px;
-  z-index: 1;
-}
-.btn-style-one:hover span {
-  color: #ffffff;
-}
-.btn-style-one:hover::before {
-  opacity: 1;
-  transition: 0.5s;
-}
-.btn-style-one span {
-  position: relative;
-  z-index: 3;
-  color: #ffffff;
-}
 
-.btn-style-one {
-  background: #181817;
-  border: 0px;
-  border-radius: 7px;
-  text-transform:capitalize;
-  font-weight: 400;
-  font-size: 16px;
-  color: #ffffff;
-  padding: 15px 30px;
-  line-height: 1;
-  position: relative;
-}
-@media only screen and (max-width: 767px) {
-  .btn-style-one {
-    padding: 15px 30px;
-  }
-}
-@media only screen and (max-width: 479px) {
-  .btn-style-one {
-    padding: 15px 30px;
-    font-size: 14px;
-  }
-}
-.btn-style-one:focus {
-  box-shadow: none;
-}
-.btn-style-one:hover {
-  color: #fff !important;
-  background-color: #343c55;
-}
-.btn-style-one:hover span {
-  color: #fff !important;
  
 }
 
 .btn-style-three {
   background: #081D55;
   border: 0px;
-  border-radius: 7px;
-  font-family: "Open Sans", sans-serif;
+  border-radius: 0px;
+  font-family: "Lato", sans-serif;
   text-transform: capitalize;
   font-weight: 400;
   font-size: 16px;
@@ -730,8 +663,8 @@ hr {
 .btn-style-four {
   background: #0b2266;
   border: 0px;
-  border-radius: 7px;
-  font-family: "Poppins", sans-serif;
+  border-radius: 0px;
+ font-family: "Bai Jamjuree", sans-serif;
   text-transform: capitalize;
   font-weight: 400;
   font-size: 18px;
@@ -777,7 +710,7 @@ hr {
   }
 }
 .heading-one-title {
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: 700;
   color: #343c55;
 }
@@ -788,7 +721,7 @@ hr {
 }
 @media only screen and (max-width: 767px) {
   .heading-one-title {
-    font-size: 30px;
+    font-size: 30px !important;
   }
 }
 @media only screen and (max-width: 575px) {
@@ -798,7 +731,7 @@ hr {
 }
 @media only screen and (max-width: 479px) {
   .heading-one-title {
-    font-size: 20px;
+    font-size: 20px !important;
   }
 }
 .heading-one-text-two {
@@ -1086,16 +1019,16 @@ hr {
   transition: 0.3s;
 }
 .header-wrapper-two .main-menu > ul > li > a {
-  line-height: 105px;
+  line-height: auto;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .header-wrapper-two .main-menu > ul > li > a {
-    line-height: 100px;
+    line-height: auto;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .header-wrapper-two .main-menu > ul > li > a {
-    line-height: 100px;
+    line-height: auto;
   }
 }
 .header-wrapper-two .hamburger_button span {
@@ -1156,19 +1089,27 @@ hr {
     margin-right: 25px;
   }
 }
+header{
+  padding:20px 0;
+}
+
 .main-menu > ul > li > a {
   font-size: 16px;
   text-transform: uppercase;
-  line-height: 120px;
+  line-height: auto;
   cursor: pointer;
   font-weight: 500;
   color: #343c55;
   position: relative;
   transition: 0.3s;
+
 }
 .main-menu > ul > li:hover > a {
   color: #081D55;
+  border-bottom: 2px solid;
+  
 }
+
 .main-menu .has-children {
   position: relative;
 }
@@ -1370,13 +1311,13 @@ hr {
   transition: 0.3s;
 }
 .sticky-header.sticky .main-menu > ul > li > a {
-  line-height: 90px;
+  line-height: auto;
 }
 .sticky-header.sticky .social-icon li a {
-  line-height: 80px;
+  line-height: auto;
 }
 .sticky-header.sticky .header-button {
-  line-height: 80px;
+  line-height: auto;
 }
 
 /* Mobile Menu Style */
@@ -1492,7 +1433,7 @@ hr {
 }
 .header-four .header-top-link {
   color: #717788;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   margin-left: 5px;
 }
@@ -1771,7 +1712,7 @@ hr {
 /* Slider One Style Start */
 .sliderone {
   position: relative;
-  margin: 0 -100px;
+  margin: 0 -70px;
 }
 @media only screen and (min-width: 1550px) and (max-width: 1699px) {
   .sliderone {
@@ -1850,7 +1791,7 @@ hr {
 }
 @media only screen and (max-width: 479px) {
   .sliderone-slingle {
-    height: 720px;
+    height: 630px;
   }
 }
 .sliderone-content {
@@ -2003,7 +1944,7 @@ hr {
 }
 .sliderone-content .slider-content .call a {
   color: #ffffff;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 1;
@@ -2272,14 +2213,16 @@ hr {
 }
 
 .sliderbg-1 {
+  opacity: 0.5;
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
-  width: 100% !important;
+  width: 95% !important;
   position: absolute;
   left: 0;
   top: 0;
   height: 960px;
+  clip-path: polygon(0 0, 100% 0, 100% 94%, 97% 100%, 0 100%);
 }
 @media only screen and (min-width: 1550px) and (max-width: 1699px) {
   .sliderbg-1 {
@@ -3438,7 +3381,7 @@ hr {
   line-height: 1;
 }
 .hero-facts-info-text {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: italic;
   margin: 5px 0px 0px;
 }
@@ -3508,7 +3451,7 @@ hr {
 .hero-facts-client-name {
   font-size: 14px;
   font-weight: 700;
-  font-family: "Poppins", sans-serif;
+ font-family: "Bai Jamjuree", sans-serif;
 }
 @media only screen and (min-width: 1550px) and (max-width: 1650px) {
   .hero-facts-client {
@@ -4526,7 +4469,7 @@ hr {
   }
 }
 .about .about-counter-1 .odometer, .about .about-counter-1 .niktext, .about .about-counter-2 .odometer, .about .about-counter-2 .niktext {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 60px;
   font-weight: 700;
   color: #ffffff;
@@ -4671,7 +4614,7 @@ hr {
 }
 .about-image-inner-thumb .date {
   font-size: 42px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 700;
   line-height: 1;
 }
@@ -4924,7 +4867,7 @@ hr {
 }
 .about-two-images {
   margin-right: 70px;
-  height: 650px;
+ 
   position: relative;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -4947,7 +4890,7 @@ hr {
 }
 @media only screen and (max-width: 479px) {
   .about-two-images {
-    height: 400px;
+    height: auto;
   }
 }
 .about-two-images-one {
@@ -4955,7 +4898,7 @@ hr {
 }
 @media only screen and (max-width: 479px) {
   .about-two-images-one {
-    width: 70%;
+    width: 100%;
   }
 }
 .about-two-images-two {
@@ -5012,7 +4955,7 @@ hr {
 }
 .about-two-images-thumb .date {
   font-size: 42px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 700;
   line-height: 1;
 }
@@ -5278,7 +5221,7 @@ hr {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: -180px;
+  left: -20px;
   z-index: -1;
 }
 .about-creative-images .image-one::before {
@@ -5296,12 +5239,12 @@ hr {
 }
 @media only screen and (min-width: 1400px) and (max-width: 1549px) {
   .about-creative-images .image-one {
-    left: -105px;
+    left: -20px;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .about-creative-images .image-one {
-    left: -40px;
+    left: -20px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -5326,7 +5269,7 @@ hr {
   display: inline-block;
   border-radius: 15px;
   position: relative;
-  margin-right: 140px;
+  margin-right: 0;
 }
 @media only screen and (min-width: 1400px) and (max-width: 1549px) {
   .about-creative-images .image-two {
@@ -5687,7 +5630,7 @@ hr {
   }
 }
 .about-three-duration .years {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: 72px;
   color: #0b2266;
@@ -5701,7 +5644,7 @@ hr {
   }
 }
 .about-three-duration .text {
-  font-family: "Poppins", sans-serif;
+ font-family: "Bai Jamjuree", sans-serif;
   font-weight: 700;
   font-size: 21px;
   text-transform: uppercase;
@@ -5765,7 +5708,7 @@ hr {
 .about-three-service-content .title {
   font-size: 21px;
   font-weight: 700;
-  font-family: "Poppins", sans-serif;
+ font-family: "Bai Jamjuree", sans-serif;
   color: #343c55;
   margin-bottom: 15px;
   display: block;
@@ -5865,7 +5808,7 @@ hr {
   }
 }
 .about-three-buttons .phone-call-number {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: 21px;
   color: #343c55;
@@ -6077,7 +6020,7 @@ hr {
   transform: translate(-50%, -50%);
 }
 .radial-progress .circle-text span.count {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 30px;
   line-height: 1;
   font-weight: 700;
@@ -6363,7 +6306,7 @@ hr {
 }
 .progress-two .progress-title {
   font-size: 21px;
-  font-family: "Poppins", sans-serif;
+ font-family: "Bai Jamjuree", sans-serif;
   font-weight: 700;
   color: #343c55;
   margin: 35px 0 20px;
@@ -6376,7 +6319,7 @@ hr {
 }
 .progress-two .progress-number {
   font-size: 18px;
-  font-family: "Poppins", sans-serif;
+ font-family: "Bai Jamjuree", sans-serif;
   font-weight: 500;
   color: #2d3757;
   position: relative;
@@ -6503,18 +6446,7 @@ hr {
   position: relative;
   transition: 0.4s;
 }
-.service-single-image::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  background: #081D55;
-  background: linear-gradient(-45deg, #2A61F1 20%, #0B2266 50%, #181817 100%);
-  opacity: 0.6;
-}
+
 .service-single-image-thumb img {
   width: 100%;
 }
@@ -7012,7 +6944,7 @@ hr {
 .service-three-title {
   font-size: 21px;
   font-weight: 700;
-  font-family: "Poppins", sans-serif;
+ font-family: "Bai Jamjuree", sans-serif;
   color: #2d3757;
   margin: 30px 0;
 }
@@ -7179,7 +7111,7 @@ hr {
   transform: translate(-50%, -50%);
 }
 .service-four-single-top .title {
-  font-family: "Poppins", sans-serif;
+ font-family: "Bai Jamjuree", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.4;
@@ -7493,7 +7425,7 @@ hr {
 }
 .service-details-help-call .text {
   font-size: 18px;
-  font-family: "Poppins", sans-serif;
+ font-family: "Bai Jamjuree", sans-serif;
   color: white;
   font-weight: 700;
   text-transform: uppercase;
@@ -7502,7 +7434,7 @@ hr {
   font-size: 18px;
   color: white;
   font-weight: 700;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 .service-details-help-call a:hover {
   color: #343c55;
@@ -8549,7 +8481,7 @@ hr {
   box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.07);
   border-radius: 13px;
   padding: 20px;
-  min-height: 260px;
+  min-height: 300px;
 }
 .testimonial-two-single .quote {
   padding: 35px 0px;
@@ -8583,7 +8515,7 @@ hr {
 .testimonial-two-single .user-meta .name {
   font-size: 21px;
   font-weight: 700;
-  font-family: "Poppins", sans-serif;
+ font-family: "Bai Jamjuree", sans-serif;
   margin-bottom: 5px;
   color: #343c55;
 }
@@ -8627,7 +8559,7 @@ hr {
 }
 @media only screen and (max-width: 575px) {
   .testimonial-two .testimonial-two-arrow .swiper-arrow-long .prev-button {
-    left: 0%;
+    left: -3%;
   }
 }
 .testimonial-two .testimonial-two-arrow .swiper-arrow-long .next-button {
@@ -8731,14 +8663,14 @@ hr {
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .swiper-arrow-long .prev-button, .swiper-arrow-long .next-button {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (max-width: 767px) {
   .swiper-arrow-long .prev-button, .swiper-arrow-long .next-button {
-    height: 45px;
-    width: 45px;
+    height: 35px;
+    width: 35px;
   }
 }
 .swiper-arrow-long .prev-button:hover, .swiper-arrow-long .next-button:hover {
@@ -8827,7 +8759,7 @@ hr {
   }
 }
 .testimonial-three-single-content .text {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: italic;
   font-size: 21px;
   color: #717788;
@@ -8855,7 +8787,7 @@ hr {
   }
 }
 .testimonial-three-single-content .bottom .client-description .name {
-  font-family: "Poppins", sans-serif;
+ font-family: "Bai Jamjuree", sans-serif;
   font-weight: 700;
   font-size: 21px;
 }
@@ -9453,22 +9385,22 @@ hr {
 
 /* Brand Four Style */
 .brand-four {
-  background-image: url(../images/brand/brand-three/brand-bg.png);
+ 
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 120px 0 395px;
+  padding: 10px 0 395px;
   margin-bottom: -1px;
   position: relative;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
   .brand-four {
-    padding: 80px 0 355px;
+    padding: 10px 0 355px;
   }
 }
 @media only screen and (max-width: 767px) {
   .brand-four {
-    padding: 60px 0 335px;
+    padding: 10px 0 335px;
   }
 }
 .brand-four .shape {
@@ -9846,7 +9778,7 @@ hr {
   }
 }
 .blog-post-three-single .content-subtitle {
-  font-family: "Poppins", sans-serif;
+ font-family: "Bai Jamjuree", sans-serif;
   font-weight: 700;
   font-size: 16px;
   color: #47bfe7;
@@ -10651,7 +10583,7 @@ hr {
   color: #abb1c3;
   font-size: 16px;
   margin-left: 20px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 .footer-left .social-icon {
   margin-top: 20px;
@@ -10822,17 +10754,27 @@ hr {
  
   width: 100%;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .footer-widget {
     max-width: 50%;
     width: 50%;
   }
+}
+@media only screen and (max-width: 767px) {
+  .footer-widget {
+    max-width: 100%;
+    width: 100%;
+  }
+  .padding-left-5 {
+    padding-left: 0% !important;
+}
 }
 .footer-widget-title {
   color: #ffffff;
   font-weight: 700;
   font-size: 21px;
   margin-bottom: 30px;
+  letter-spacing: 1px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (max-width: 767px) {
   .footer-widget-title {
@@ -10844,7 +10786,7 @@ hr {
 }
 .footer-widget-list li a {
   color: #abb1c3;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
 }
 .footer-widget-list li a:hover {
@@ -10870,17 +10812,17 @@ hr {
   border: 0px;
   padding: 0 60px 0 15px;
   color: #717788;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
 }
 .footer-widget-form input::-moz-placeholder {
   color: #717788;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
 }
 .footer-widget-form input::placeholder {
   color: #717788;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
 }
 .footer-widget-form button {
@@ -10926,7 +10868,7 @@ hr {
   }
 }
 .footer-copyright-inner p {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   color: #abb1c3;
   font-size: 16px;
   margin-bottom: 0px;
@@ -10959,7 +10901,7 @@ hr {
 .footer-copyright-inner .footer-bootm-list li a {
   font-size: 16px;
   color: #abb1c3;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 .footer-copyright-inner .footer-bootm-list li a:hover {
   color: #ffffff;
@@ -11032,7 +10974,7 @@ hr {
   }
 }
 .footer-two-copyright-inner p {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   color: #717788;
   font-size: 16px;
   margin-bottom: 0px;
@@ -11065,7 +11007,7 @@ hr {
 .footer-two-copyright-inner .footer-two-bootm-list li a {
   font-size: 16px;
   color: #717788;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 .footer-two-copyright-inner .footer-two-bootm-list li a:hover {
   color: #081D55;
@@ -11353,12 +11295,12 @@ hr {
 }
 .footer-widget-two .tweets li .content .text {
   color: #717788;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
 }
 .footer-widget-two .tweets li .content .bit-link {
   color: #717788;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 700;
   font-style: italic;
   font-size: 16px;
@@ -11395,11 +11337,11 @@ hr {
 }
 .footer-three .footer-widget-two-list-icon li span {
   color: #717788;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   margin-left: 25px;
 }
 .footer-three .footer-widget-two-list a {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 .footer-three .footer-two-copyright-inner {
   padding: 60px 0px;
@@ -11735,14 +11677,14 @@ hr {
 }
 .breadcrumb-list li a {
   color: #ffffff;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
 }
 .breadcrumb-list li a:hover {
   color: #343c55;
 }
 .breadcrumb-list li span {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
 }
 
@@ -11880,7 +11822,7 @@ hr {
 }
 .funfact .heading-one-title {
   color: #ffffff;
-  margin: 5px 0 40px;
+  margin: 5px 0 20px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (max-width: 767px) {
   .funfact .heading-one-title {
@@ -11916,30 +11858,42 @@ hr {
   flex-direction: column;
   border-radius: 13px;
   background-color: #0b2266;
-  max-width: 230px;
+  max-width: 38%;
   width: 100%;
+  min-height: 250px;
+}
+@media only screen and (max-width: 1567px) {
+  .funfact .about-counter-2 {
+    max-width: 45%;
+  }
 }
 @media only screen and (max-width: 767px) {
   .funfact .about-counter-2 {
-    max-width: 200px;
+    max-width: 100%;
     padding: 30px 30px 38px;
+    min-height: 220px;
   }
 }
 @media only screen and (max-width: 479px) {
   .funfact .about-counter-2 {
-    max-width: 160px;
+    max-width: 100%;
     padding: 20px 25px 24px;
+    min-height: 220px;
+    text-align: center;
+  }
+  .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 90%;
   }
 }
 .funfact .about-counter-2 .odometer, .funfact .about-counter-2 .niktext {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 60px;
   font-weight: 700;
   color: #ffffff;
 }
 @media only screen and (max-width: 479px) {
   .funfact .about-counter-2 .odometer, .funfact .about-counter-2 .niktext {
-    font-size: 40px;
+    font-size: 54px;
   }
 }
 .funfact .about-counter-2 .niktext {
@@ -11962,7 +11916,15 @@ hr {
 @media only screen and (max-width: 479px) {
   .funfact .about-counter-title {
     font-size: 16px;
+    justify-content: center;
   }
+  .funfact .container{
+    padding: 0 !important;
+  }
+  .single-team {
+ 
+    padding-bottom: 20px !important;
+}
 }
 .funfact .about-counter .funfact-inner {
   display: flex;
@@ -11995,7 +11957,7 @@ hr {
 
 .single-team {
   position: relative;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 .single-team-image img {
   width: 100%;
@@ -12008,7 +11970,7 @@ hr {
   width: 100%;
   text-align: center;
   border-radius: 10px;
-  min-height: 300px;
+  min-height: 200px;
   z-index: 1;
   bottom: 0px;
 }
@@ -12028,7 +11990,7 @@ hr {
 }
 .single-team-content .desig {
   font-size: 16px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   color: #717788;
   display: block;
@@ -12722,13 +12684,13 @@ hr {
 @media only screen and (max-width: 575px) {
   .system-bg2 .heading-one {
     max-width: 456px;
-    margin: 0 auto 0 12px;
+    margin: auto;
   }
 }
 @media only screen and (max-width: 479px) {
   .system-bg2 .heading-one {
     max-width: 336px;
-    margin: 0 auto 0 12px;
+    margin: auto;
   }
 }
 .system-bg2 .heading-one-subtitle {
@@ -12853,12 +12815,12 @@ hr {
 .sidebar-input::-moz-placeholder {
   color: #717788;
   font-size: 16px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 .sidebar-input::placeholder {
   color: #717788;
   font-size: 16px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 .sidebar-blog li {
   display: flex;
@@ -12899,7 +12861,7 @@ hr {
 }
 .sidebar-blog li .content .date {
   font-size: 14px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   color: #717788;
   line-height: 1;
   margin-bottom: 10px;
@@ -12928,7 +12890,7 @@ hr {
 }
 .sidebar-tags a {
   font-size: 14px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   padding: 10px 20px;
   border-radius: 30px;
   border: 1px solid #d1dbe5;
@@ -13056,7 +13018,7 @@ hr {
   padding: 16px 38px;
   display: inline-block;
   font-size: 16px;
-  font-family: "Poppins", sans-serif;
+ font-family: "Bai Jamjuree", sans-serif;
   position: relative;
   z-index: 1;
 }
@@ -13095,7 +13057,7 @@ hr {
 }
 .blockquote span {
   font-size: 21px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: italic;
   line-height: 1.42;
   color: #717788;
@@ -13403,7 +13365,7 @@ hr {
 .comment .meta .date {
   font-size: 14px;
   color: #a3a8af;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 .comment .text {
   margin-top: 20px;
@@ -13523,13 +13485,13 @@ hr {
 }
 .comment-form-inner input::-moz-placeholder, .comment-form-inner textarea::-moz-placeholder {
   color: #717788;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   line-height: 1;
 }
 .comment-form-inner input::placeholder, .comment-form-inner textarea::placeholder {
   color: #717788;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   line-height: 1;
 }
@@ -13875,7 +13837,7 @@ hr {
 .support .phone-call .phone-text {
   font-size: 24px;
   font-weight: 600;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   color: #ffffff;
   transition: 0.4s;
 }
@@ -14478,7 +14440,7 @@ hr {
   }
 }
 .home-contact_content .subtitle {
-  font-family: "Poppins", sans-serif;
+ font-family: "Bai Jamjuree", sans-serif;
   font-weight: 700;
   font-size: 18px;
   color: #ffffff;
@@ -14487,7 +14449,7 @@ hr {
   letter-spacing: 4px;
 }
 .home-contact_content .title {
-  font-family: "Poppins", sans-serif;
+ font-family: "Bai Jamjuree", sans-serif;
   font-weight: 700;
   font-size: 48px;
   color: #ffffff;
@@ -14540,7 +14502,7 @@ hr {
 }
 .home-contact_info .details-title {
   color: #ffffff;
-  font-family: "Poppins", sans-serif;
+ font-family: "Bai Jamjuree", sans-serif;
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 6px;
@@ -14578,18 +14540,18 @@ hr {
 }
 .home-contact_form input, .home-contact_form textarea, .home-contact_form button {
   width: 100%;
-  border-radius: 7px;
+  border-radius: 0px;
   border: 0px;
 }
 .home-contact_form input::-moz-placeholder, .home-contact_form textarea::-moz-placeholder {
   font-size: 16px;
   color: #717788;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 .home-contact_form input::placeholder, .home-contact_form textarea::placeholder {
   font-size: 16px;
   color: #717788;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 .home-contact_form input {
   height: 60px;
@@ -14722,6 +14684,7 @@ hr {
   text-transform: uppercase;
   display: block;
   margin-bottom: 10px;
+  letter-spacing: 1px;
 }
 @media only screen and (max-width: 767px) {
   .contact-us .contact-info li .title {
@@ -14730,7 +14693,7 @@ hr {
 }
 .contact-us .contact-info li .text {
   color: #717788;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
 }
 @media only screen and (max-width: 767px) {
@@ -14764,7 +14727,7 @@ hr {
   width: 100%;
   border: 1px solid #cbcbdc;
   height: 60px;
-  border-radius: 7px;
+  border-radius: 0px;
   padding-right: 20px;
   padding-left: 20px;
   background-color: #ffffff;
@@ -14781,13 +14744,13 @@ hr {
   }
 }
 .contact-us .contact-form input::-moz-placeholder, .contact-us .contact-form textarea::-moz-placeholder {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   color: #717788;
   font-size: 16px;
   line-height: 1;
 }
 .contact-us .contact-form input::placeholder, .contact-us .contact-form textarea::placeholder {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   color: #717788;
   font-size: 16px;
   line-height: 1;
@@ -15097,7 +15060,7 @@ hr {
   background: linear-gradient(-45deg, #5BCFF2 0%, #417DD2 50%, #081D55 100%);
   border-radius: 0 7px 7px 0;
   padding: 20px 48px;
-  font-family: "Poppins", sans-serif;
+ font-family: "Bai Jamjuree", sans-serif;
   font-weight: 300;
   font-size: 18px;
 }
@@ -15347,6 +15310,9 @@ color:white;
     margin-bottom:50px;
     flex-direction: column;
   }
+
+
+
 }
 /*accordian*/
 
@@ -15369,3 +15335,110 @@ color:white;
   font-size: 22px;
   color: #fff;
 }
+
+.btn-main {
+  background-color: #181817 ;
+  border: 1px solid #181817;
+  border-radius: 0px;
+  text-transform:uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 20px 45px;
+  line-height: 1;
+  position: relative;
+}
+.btn-main:hover{
+  background-color: transparent;
+  color: #181817;
+  border: 1px solid #181817;
+  
+}
+
+
+.btn-slider {
+  background-color: transparent ;
+  border: 1px solid #fff;
+  border-radius: 0px;
+  text-transform:uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 20px 45px;
+  line-height: 1;
+  position: relative;
+}
+.btn-slider:hover{
+  background-color: #181817;
+  color: #fff;
+  border: 1px solid #181817;
+  
+}
+
+
+.custom-card {
+ border-radius: 5px;
+  overflow: hidden; /* Ensure no elements overflow */
+  background: #f9f9f9; /* Card background color */
+}
+
+.image-section {
+  position: relative;
+  width: 100%;
+  height: 200px; /* Adjust image section height */
+  background: #000; /* Fallback background color */
+ 
+}
+
+.image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image fits the container */
+}
+
+.text-section {
+  padding: 15px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+
+/************************/
+
+.custom-card-service {
+ 
+  border-radius: 5px;
+  border: none;overflow: hidden; /* Ensure no elements overflow */
+  background:#fff; /* Gradient for visibility */
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 90% 100%, 0 100%);
+  
+}
+ 
+ .image-section-service {
+   position: relative;
+   width: 100%;
+   height: auto; /* Adjust image section height */
+   background: #000; /* Fallback background color */
+   
+ }
+ 
+ .image-section img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover; /* Ensure the image fits the container */
+ }
+ 
+ .text-section {
+   padding: 15px;
+   text-align: center;
+   font-size: 16px;
+   font-weight: bold;
+   color: #333;
+ }
+
+ .content{
+  padding:20px;
+ }
+ 

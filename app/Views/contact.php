@@ -1,83 +1,127 @@
+<style>
+    .co {
+        border-bottom: 2px solid #343c55;
+    }
 
+    .btn-main {
+        background-color: #181817;
+        border: 1px solid #181817;
+        border-radius: 0px;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 16px;
+        color: #ffffff;
+        padding: 20px 45px;
+        line-height: 1;
+        position: relative;
+    }
+
+    .btn-main:hover {
+        background-color: #fff;
+        color: #181817;
+        border: 1px solid #181817;
+
+    }
+</style>
 
 <!-- Contact Us Section Start -->
-    <div class="contact-us section-margin">
-        <div class="container position-relative">
-            <div class="row">
-                <!-- Heading Start -->
-                <div class="heading-one text-center wow fadeIn" fadeIndata-wow-duration=".1s" data-wow-delay=".1s">
-                    <span class="heading-one-subtitle">Contact Us</span>
-                    <h2 class="heading-one-title">Stay Connected</h2>
-                </div>
-                <!-- Heading End -->
+<div class="contact-us section-margin">
+    <div class="container position-relative">
+        <div class="row">
+            <!-- Heading Start -->
+            <div class="heading-one text-center wow fadeIn" fadeIndata-wow-duration=".1s" data-wow-delay=".1s">
+                <span class="heading-one-subtitle">Contact Us</span>
+                <h2 class="heading-one-title">Stay Connected</h2>
             </div>
-            <div class="row mb-n30">
-                <div class="col-md-6 mb-30 wow fadeIn" fadeIndata-wow-duration=".1s" data-wow-delay=".1s">
-                    <div class="contact-head">
-                        <p class="text">Have questions or need assistance? We're here to help! Reach out to us, and we'll get back to you as soon as possible.</p>
-                    </div>
-                    <!-- Contact Information Start -->
-                    <ul class="contact-info">
-                        <li>
+            <!-- Heading End -->
+        </div>
+        <div class="row mb-n30">
+            <div class="col-md-6 mb-30 wow fadeIn" fadeIndata-wow-duration=".1s" data-wow-delay=".1s">
+                <div class="contact-head">
+                    <p class="text">Have questions or need assistance? We're here to help! Reach out to us, and we'll get back to you as soon as possible.</p>
+                </div>
+                <!-- Contact Information Start -->
+                <ul class="contact-info">
+                    <li>
+                        <div class="col-md-2 col-3">
                             <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                        </div>
+                        <div class="col-md-10 col-9">
                             <div class="contact-info-content">
                                 <h3 class="title">Address</h3>
                                 <span class="text"></span>Unit #11-30, 8 Marina Boulevard, Level-11, Singapore 018981</span>
                             </div>
-                        </li>
-                        <li>
-                            <div class="icon"><i class="fas fa-phone-alt"></i></div>
-                            <div class="contact-info-content">
-                                <h3 class="title">Phone</h3>
-                                <span class="text"><a href="tel:+65-66318415">+65-66318415</a></span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon"><i class="fas fa-envelope"></i></div>
-                            <div class="contact-info-content">
-                                <h3 class="title">Email</h3>
-                                <span class="text"><a href="mailto:hello@avers.com">sales@jaguarsteelandcoal.com</a></span>
-                            </div>
-                        </li>
-                    </ul>
-                    <!-- Contact Information End -->
-                </div>
-
-                <div class="col-md-6 mb-30 wow fadeIn" fadeIndata-wow-duration=".01s" data-wow-delay=".1s">
-                    <form id="contact-form" class="contact-form" action="/php/contact.php">
-                        <div class="row">
-                            <div class="col-lg-6 mb-3">
-                                <input placeholder="Your name" name="name">
-                            </div>
-                            <div class="col-lg-6 mb-3">
-                                <input type="email" placeholder="Your email" name="email">
-                            </div>
-                            <div class="col-lg-6 mb-3">
-                                <input placeholder="Your phone" name="phone">
-                            </div>
-                            <div class="col-lg-6 mb-3">
-                                <input placeholder="Subject" name="subject">
-                            </div>
-                            <div class="col-12 mb-3">
-                                <textarea name="message" placeholder="Write your comment here"></textarea>
-                            </div>
-                            <div class="col-12 text-left">
-                                <button class="btn btn-style-one" type="submit"> <span>Submit Now</span> </button>
-                            </div>
-                            <div class="col-12">
-                                <!--== Message Notification ==-->
-                                <div class="form-message mt-4"></div>
-                            </div>
                         </div>
-                    </form>
-                </div>
+
+
+                    </li>
+                    <li>
+                    <div class="col-md-2 col-3">
+                    <div class="icon"><i class="fas fa-phone-alt"></i></div>
+                        </div>
+                        <div class="col-md-10 col-9">
+                        <div class="contact-info-content">
+                            <h3 class="title">Phone</h3>
+                            <span class="text"><a href="tel:+65-66318415">+65-66318415</a></span>
+                        </div>
+                        </div>
+                        
+                        
+                    </li>
+                    <li>
+                    <div class="col-md-2 col-3">
+                    <div class="icon"><i class="fas fa-envelope"></i></div>
+                        </div>
+                        <div class="col-md-10 col-9">
+                        <div class="contact-info-content">
+                            <h3 class="title">Email</h3>
+                            <span class="text"><a href="mailto:hello@avers.com">sales@jaguarsteelandcoal.com</a></span>
+                        </div>
+                        </div>
+                       
+                        
+                    </li>
+                </ul>
+                <!-- Contact Information End -->
+            </div>
+
+            <div class="col-md-6 mb-30 wow fadeIn" fadeIndata-wow-duration=".01s" data-wow-delay=".1s">
+                <form id="contact-form" class="contact-form" action="/php/contact.php">
+                    <div class="row">
+                        <div class="col-lg-6 mb-3">
+                            <input placeholder="Your name" name="name">
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <input type="email" placeholder="Your email" name="email">
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <input placeholder="Your phone" name="phone">
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <input placeholder="Subject" name="subject">
+                        </div>
+                        <div class="col-12 mb-3">
+                            <textarea name="message" placeholder="Write your comment here"></textarea>
+                        </div>
+                        <div class="col-12 text-left">
+                            <button class="btn-main" type="submit">
+                                Submit Now
+                            </button>
+                        </div>
+                        <div class="col-12">
+                            <!--== Message Notification ==-->
+                            <div class="form-message mt-4"></div>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
-    <!-- Contact Us Section End -->
+</div>
+<!-- Contact Us Section End -->
 
-    <!-- Contact Map Section Start -->
-    <!-- <div class="section-margin-bottom">
+<!-- Contact Map Section Start -->
+<!-- <div class="section-margin-bottom">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -97,4 +141,4 @@
             </div>
         </div>
     </div> -->
-    <!-- Contact Map Section End -->
+<!-- Contact Map Section End -->

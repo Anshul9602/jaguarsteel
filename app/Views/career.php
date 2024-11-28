@@ -52,6 +52,12 @@
         font-family: "Inter", sans-serif;
         font-size: 16px;
     }
+    .ab {
+        border-bottom: 2px solid #343c55;
+    }
+    .btn-main:hover {
+        border: 2px solid #343c55;
+    }
 </style>
 <br /><br />
 <div class="speciality ">
@@ -71,7 +77,7 @@
                     <span class="heading-one-subtitle">Work Culture</span>
                     <h2 style="font-size: 2.5em;" class="heading-one-title">Innovative, Collaborative & Culturally Diverse Team
                     </h2>
-                    <p>At Jaguar Steel and Coal Pte Ltd., we believe in the power of teamwork and continuous improvement. Our collaborative environment fosters innovation and encourages each team member to contribute ideas and solutions, driving our collective success.
+                    <p style="    text-align: justify;">At Jaguar Steel and Coal Pte Ltd., we believe in the power of teamwork and continuous improvement. Our collaborative environment fosters innovation and encourages each team member to contribute ideas and solutions, driving our collective success.
                         <br /><br />
                         Our team’s cultural diversity is a key asset, with members fluent in languages such as French, Spanish, Russian, Polish, Mandarin, and Ukrainian. This multilingual capability enhances our global operations and strengthens our interactions across different markets.
 
@@ -132,8 +138,8 @@
             <label for="position">Position:</label><br>
             <input type="text" id="position" name="position" required><br><br>
         </div>
-        <div class="row justify-content-end">
-            <div class="col-md-3 justify-content-end d-flex"><button type="submit" class="btn btn-style-one">
+        <div class="row justify-content-center">
+            <div class="col-md-3 justify-content-center d-flex"><button type="submit" class=" btn-main" >
                    <span>Apply Now</span> 
                 </button></div>
         </div>

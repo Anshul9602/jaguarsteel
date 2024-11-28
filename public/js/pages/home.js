@@ -14,11 +14,11 @@
       delay: 3000, // Delay in ms (3000ms = 3 seconds)
       disableOnInteraction: false, // Continue autoplay even after user interaction
     },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    
+    // pagination: {
+    //   el: ".swiper-pagination",
+    //   clickable: true,
+    // },
+  pagination: false,
     navigation: {
       nextEl: '.sliderone .swiper-button-next',
       prevEl: '.sliderone .swiper-button-prev'
@@ -151,37 +151,45 @@ var swiper = new Swiper(".vertical-testimonial", {
 /*---------------------------
   Brand Slider Activation
 -----------------------------------*/
-var swiper = new Swiper(".brand-slider",{
-  loop:true,
-  speed:800,
-  autoplay:false,
-  slidesPerView:5,
-  spaceBetween:0,
-  pagination:false,
-  navigation:false,
-  breakpoints:{
+var swiper = new Swiper(".brand-slider", {
+  speed: 5000,
+  loop: true, // Smooth transition speed
+  autoplay: {
+    delay: 0, // No delay for continuous motion
+    disableOnInteraction: true, // Interaction doesn’t stop autoplay
+  },
+  slidesPerView: 5,
+  spaceBetween: 80,
+  freeMode: true, // Enable free scrolling
+  freeModeMomentum:false, // Disable momentum stopping
+  freeModeSticky: false, // No snapping to slides
+  pagination: false,
+  navigation: false,
+  breakpoints: {
     0: {
       slidesPerView: 2,
-      spaceBetween: 80,
+      spaceBetween: 20,
     },
     480: {
       slidesPerView: 2,
-      spaceBetween: 80,
+      spaceBetween: 20,
     },
     768: {
       slidesPerView: 3,
-      spaceBetween: 80,
+      spaceBetween: 30,
     },
     992: {
       slidesPerView: 3,
-      spaceBetween: 80,
+      spaceBetween: 40,
     },
     1200: {
       slidesPerView: 5,
-      spaceBetween: 80,
-    }
-  }
-})
+      spaceBetween: 50,
+    },
+  },
+});
+
+
 /*---------------------------
   Brand Slider Two Activation
 -----------------------------------*/

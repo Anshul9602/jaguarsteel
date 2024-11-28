@@ -25,7 +25,7 @@ We may update this Privacy Statement as needed. Changes will be posted here, and
 <br /><br /><br />
 Contact Us
 For any questions or concerns about this Privacy Statement, please contact:<br />
-Jaguar Steel<br />
+Jaguar Steel<br /><br>
 Email: sales@jaguarsteelandcoal.com
 <br /><br /><br />
              </p>     

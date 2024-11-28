@@ -11,7 +11,7 @@
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url(''); ?>/images/favicon.png">
 
-
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <!-- CSS (Font, Plugins & Style CSS files) -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
@@ -26,15 +26,28 @@
     <link rel="stylesheet" href="<?php echo base_url('css/plugins/fancybox.min.css');?>">
     <link rel="stylesheet" href="<?php echo base_url('css/plugins/magnific-pupup.css');?>">
 
-    <!-- Style CSS -->
-    <link rel="stylesheet" href="<?php echo base_url('css/style.css');?>">
-
       <!-- Bootstrap JS and dependencies -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
  
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="<?php echo base_url('css/style.css?v1.11234');?>">
 
+<style>
+     .contact-us .contact-form input, .contact-us .contact-form textarea{
+         border-radius:0px !important;
+      }
+
+      @media (max-width: 768px) {
+         .menu-expand {
+            float: inline-end;
+         }
+      }
+      .row{
+      margin: 0;
+   }
+</style>
 
 </head>
 
@@ -42,8 +55,7 @@
 
     <header class="header-wrapper-two header-two sticky-header">
         <div class="custom-container">
-            <div class="container-fluid">
-                <div class="row">
+        <div class="row">
                     <div class="col-12">
                         <div class="flex-center justify-content-between">
                             <!-- Header Logo Start -->
@@ -63,12 +75,12 @@
                                                 <a href="<?php echo base_url(''); ?>">Home</a>
                                             </li>
                                             <li class="has-children">
-                                                <a href="#">About</a>
+                                                <a href="#" class="ab">About</a>
                                                 <ul class="sub-menu">
-                                                    <li class="has-submenu"><a href="ourstory">Company</a>
+                                                    <li class="has-submenu"><a href="<?php echo base_url('ourstory'); ?>">Company</a>
                                                     </li>
                                                    
-                                                    <li class="has-submenu"><a href="career">Career</a>
+                                                    <li class="has-submenu"><a href="<?php echo base_url('career'); ?>">Career</a>
                                                     </li>
                                                    
 
@@ -77,15 +89,15 @@
                                                 </ul>
                                             </li>
                                             <li >
-                                                <a href="services">What We Do</a>
+                                                <a href="<?php echo base_url('services'); ?>" class="wh">What We Do</a>
                                               
                                             </li>
                                           
                                             <li>
-                                                <a href="csr">Social Responsibility</a>
+                                                <a href="<?php echo base_url('csr'); ?>" class="so">Social Responsibility</a>
                                             </li>
                                             <li>
-                                                <a href="contact">Contact</a>
+                                                <a href="<?php echo base_url('contact'); ?>" class="co">Contact</a>
                                             </li>
                                         </ul>
                                     </nav>
@@ -115,17 +127,16 @@
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
     </header>
 
-    <div class="offcanvas offcanvas-end" id="offcanvas-header">
+    <div class="offcanvas offcanvas-end" id="offcanvas-header"style="    z-index: 9999999;">
 
         <div class="offcanvas-header">
             <!-- Header Logo Start -->
             <div class="logo">
                 <a href="\">
-                    <img src="<?php echo base_url(''); ?>/images/Jaguarsteel.png" alt="">
+                    <img src="<?php echo base_url(''); ?>/images/logo-main.png" alt="">
                 </a>
             </div>
             <!-- Header Logo End -->
@@ -134,42 +145,33 @@
         <div class="offcanvas-body">
             <!-- mobile menu navigation start -->
            
-                <ul class="mobile-menu">
-                    <li>
-                        <a href="<?php echo base_url(''); ?>\">HOME</a>
-                    </li>
-                    <li class="menu-item-has-children">
-                        <a href="ourstory">ABOUT</a>
-                 
-                </li>
-                    <li class="menu-item-has-children">
-                        <a href="product">WHAT WE DO</a>
-                       
-                    </li>
-                   
-                    <li>
-                        <a href="career menu-item-has-children">CARRER</a>
-                        <ul class="dropdown">
-                          
-                                <li>
-                                    <a href="ferrous">About Company</a>
-                                 </li>
-                                 <li>
-                                    <a href="ferrous">Leadership</a>
-                                 </li>
-                                 <li>
-                                    <a href="ferrous">Career</a>
-                                 </li>
-                               
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="csr">SOCIAL RESPONSIBILITY</a>
-                    </li>
-                    <li>
-                        <a href="contact">CONTACT</a>
-                </li>
-                </ul>
+            <ul class="mobile-menu">
+               <li>
+                  <a href="<?php echo base_url(''); ?>">HOME</a>
+               </li>
+               <li class="has-children">
+               <a href="#" class="ab">ABOUT</a>
+               <ul class="dropdown sub-menu">
+                  <li>
+                     <a href="<?php echo base_url('ourstory'); ?>">COMAPNY</a>
+                  </li>
+                  <li>
+                     <a href="<?php echo base_url('career'); ?>">CARRER</a>
+                  </li>
+
+               </ul>
+            </li>
+               <li >
+                  <a href="<?php echo base_url('services'); ?>">WHAT WE DO</a>
+               </li>
+              
+               <li>
+                  <a href="<?php echo base_url('csr'); ?>">SOCIAL RESPONSIBILITY</a>
+               </li>
+               <li>
+                  <a href="<?php echo base_url('contact'); ?>">CONTACT</a>
+               </li>
+            </ul>
             </nav>
             <!-- mobile menu navigation end -->
         </div>

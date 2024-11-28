@@ -1,6 +1,7 @@
 <style>
     h4{
         padding-top:15px;
+        margin-bottom: 15px;
     }
 </style>
 <div class="container mt-5">
@@ -15,7 +16,7 @@
     <p>If you disagree with any part of these terms and conditions, please do not use our website.</p>
 
     <h4>1. Definitions</h4>
-    <p>"Jaguar Steel," "us," or "we" refers to the owner of the website whose registered office is [Your Address].</p>
+    <p>"Jaguar Steel," "us," or "we" refers to the owner of the website whose registered office is Unit #11-30, 8 Marina Boulevard, Level-11, Singapore 018981.</p>
     <p>"You" refers to the user or viewer of our website.</p>
 
     <h4>2. Use of Website</h4>
@@ -38,11 +39,12 @@
     <p><strong>Updates:</strong> We may update these Terms and Conditions periodically. Changes will be posted on this page and will become effective immediately upon posting. Please review these terms regularly.</p>
 
     <h4>7. Governing Law</h4>
-    <p><strong>Jurisdiction:</strong> These Terms and Conditions are governed by the laws of [Your Jurisdiction]. Any disputes arising from your use of the website will be subject to the exclusive jurisdiction of the courts in [Your Jurisdiction].</p>
+    <p><strong>Jurisdiction:</strong> These Terms and Conditions are governed by the laws of Singapore. Any disputes arising from your use of the website will be subject to the exclusive jurisdiction of the courts in Singapore.</p>
 
     <h4>8. Contact Us</h4>
     <p>For any questions regarding these Terms and Conditions, please contact us at:</p>
-    <p><strong>Jaguar Steel</strong><br>
+    <p><strong>Jaguar Steel</strong></p>
+    <p>
     Email: <a href="mailto:sales@jaguarsteelandcoal.com">sales@jaguarsteelandcoal.com</a></p>
     <br /><br />
   

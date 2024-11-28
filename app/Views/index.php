@@ -8,6 +8,8 @@
    <meta name="robots" content="noindex, follow">
    <meta name="description" content="">
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <!-- Favicon -->
+   <link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url(''); ?>/images/favicon.png">
    <!-- CSS (Font, Plugins & Style CSS files) -->
    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
    <!-- Vendor CSS (Bootstrap & Icon Font) -->
@@ -20,7 +22,8 @@
    <link rel="stylesheet" href="<?php echo base_url('css/plugins/fancybox.min.css'); ?>">
    <link rel="stylesheet" href="<?php echo base_url('css/plugins/magnific-pupup.css'); ?>">
    <!-- Style CSS -->
-   <link rel="stylesheet" href="<?php echo base_url('css/style.css'); ?>">
+   <link rel="stylesheet" href="<?php echo base_url('css/style.css?v=1.25'); ?>">
+   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
    <!-- Bootstrap JS and dependencies -->
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -39,82 +42,164 @@
       .sticky .main-menu>ul>li>a {
          color: #343c55;
       }
+
+      .contact-us .contact-form input,
+      .contact-us .contact-form textarea {
+         border-radius: 0px !important;
+      }
+
+      .btn-style-one:hover {
+         text-decoration: underline;
+         font-weight: 700;
+      }
+
+      .custom-card-service:hover {
+         transform: translateY(-10px);
+         cursor: pointer;
+         transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      @media (max-width: 768px) {
+         .menu-expand {
+            float: inline-end;
+         }
+
+         .sliderbg-1 {
+            clip-path: polygon(0 0, 100% 0, 100% 92%, 88% 100%, 0 100%);
+         }
+
+         .about-two-text .btn-style-one {
+            margin-top: 0px;
+
+         }
+
+         .about-two-images-one .image-section {
+            height: auto !important;
+
+         }
+
+         .desk {
+            display: none;
+         }
+
+         .slider-text {
+            font-size: 14px !important;
+         }
+      }
+
+      .header-wrapper-two .hamburger_button span {
+         background: #fff;
+      }
+
+      .sticky .hamburger_button span {
+         background: #081D55;
+      }
+
+      @media only screen and (max-width: 479px) {
+         .btn-style-one {
+            padding: 15px 20px 15px 0;
+            font-size: 14px;
+            margin-bottom: 15px;
+         }
+
+         .about-two-images {
+            margin: 0;
+         }
+
+      }
+
+      .splide .splide__arrows {
+         display: none;
+      }
+
+      .row {
+         margin: 0;
+      }
    </style>
+
+
+   <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet" />
+   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"> </script>
+   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"> </script>
+   <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
+   <link href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+" rel="stylesheet">
 </head>
 
 <body>
-   <header style="border:none" class="header-wrapper-two header-two sticky-header">
+   <header style="border:none" id="header" class="header-wrapper-two header-two sticky-header">
       <div class="custom-container">
-         <div class="container-fluid">
-            <div class="row">
-               <div class="col-12">
-                  <div class="flex-center justify-content-between">
-                     <!-- Header Logo Start -->
-                     <div class="logo">
-                        <a href="<?php echo base_url(''); ?>">
-                           <img class="logo-2" src="<?php echo base_url(''); ?>/images/logo-main.png" alt="logoImage" style="width:165px;"></a>
-                        </a>
+         <div class="row">
+            <div class="col-12">
+               <div class="flex-center justify-content-between">
+                  <!-- Header Logo Start -->
+                  <div class="logo">
+                     <a href="<?php echo base_url(''); ?>">
+                        <img id="logo" class="logo-2" src="<?php echo base_url(''); ?>images/logo-white.png?v=1.23" alt="logoImage" style="width:165px;"></a>
+                     </a>
+                  </div>
+                  <!-- Header Logo End -->
+                  <div class="flex-center header-right">
+                     <!-- Header Menu Start -->
+                     <div class="d-none d-lg-flex header-right_menu">
+                        <nav class="main-menu">
+                           <ul>
+                              <li>
+                                 <a href="<?php echo base_url(''); ?>" style="border-bottom: 2px solid;">Home</a>
+                              </li>
+                              <li class="has-children">
+                                 <a href="#" class="ab">About</a>
+                                 <ul class="sub-menu">
+                                    <li class="has-submenu"><a href="<?php echo base_url('ourstory'); ?>">Company</a>
+                                    </li>
+                                    <li class="has-submenu"><a href="<?php echo base_url('career'); ?>">Career</a>
+                                    </li>
+                                 </ul>
+                              </li>
+                              <li class="has-children">
+                                 <a href="<?php echo base_url('services'); ?>" ca>What We Do</a>
+                              </li>
+                              <li>
+                                 <a href="<?php echo base_url('csr'); ?>">Social Responsibility</a>
+                              </li>
+                              <li>
+                                 <a href="<?php echo base_url('contact'); ?>">Contact</a>
+                              </li>
+                           </ul>
+                        </nav>
                      </div>
-                     <!-- Header Logo End -->
-                     <div class="flex-center header-right">
-                        <!-- Header Menu Start -->
-                        <div class="d-none d-lg-flex header-right_menu">
-                           <nav class="main-menu">
-                              <ul>
-                                 <li>
-                                    <a href="<?php echo base_url(''); ?>">Home</a>
-                                 </li>
-                                 <li class="has-children">
-                                    <a href="#">About</a>
-                                    <ul class="sub-menu">
-                                       <li class="has-submenu"><a href="ourstory">Company</a>
-                                       </li>
-                                       <li class="has-submenu"><a href="career">Career</a>
-                                       </li>
-                                    </ul>
-                                 </li>
-                                 <li class="has-children">
-                                    <a href="services">What We Do</a>
-                                 </li>
-                                 <li>
-                                    <a href="csr">Social Responsibility</a>
-                                 </li>
-                                 <li>
-                                    <a href="contact">Contact</a>
-                                 </li>
-                              </ul>
-                           </nav>
+                     <!-- Header Menu End -->
+                     <!-- Header Actions Start -->
+                     <div class="header-right_actions flex-center">
+                        <div class="input-group rounded">
+                           <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
                         </div>
-                        <!-- Header Menu End -->
-                        <!-- Header Actions Start -->
-                        <div class="header-right_actions flex-center">
-                           <div class="input-group rounded">
-                              <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
-                           </div>
-                           <div class="hamburger d-block d-lg-none">
-                              <!-- Mobile Menu Hambarger Action Button Start -->
-                              <a class="header-action-btn header-action-btn-menu hamburger_button d-flex" href="#/" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-header">
-                                 <span></span>
-                                 <span></span>
-                                 <span></span>
-                              </a>
-                              <!-- Mobile Menu Hambarger Action Button End -->
-                           </div>
+                        <div class="hamburger d-block d-lg-none">
+                           <!-- Mobile Menu Hambarger Action Button Start -->
+                           <a class="header-action-btn header-action-btn-menu hamburger_button d-flex" href="#/" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-header">
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                           </a>
+                           <!-- Mobile Menu Hambarger Action Button End -->
                         </div>
-                        <!-- Header Social Actions End -->
                      </div>
+                     <!-- Header Social Actions End -->
                   </div>
                </div>
             </div>
          </div>
       </div>
    </header>
-   <div class="offcanvas offcanvas-end" id="offcanvas-header">
+   <div class="offcanvas offcanvas-end" id="offcanvas-header" style="    z-index: 9999999;">
       <div class="offcanvas-header">
          <!-- Header Logo Start -->
          <div class="logo">
             <a href="\">
-               <img src="<?php echo base_url(''); ?>/images/Jaguarsteel.png" alt="">
+               <img src="<?php echo base_url(''); ?>/images/logo-main.png" alt="">
             </a>
          </div>
          <!-- Header Logo End -->
@@ -126,31 +211,27 @@
             <li>
                <a href="<?php echo base_url(''); ?>">HOME</a>
             </li>
-            <li class="menu-item-has-children">
-               <a href="ourstory">ABOUT</a>
-            </li>
-            <li class="menu-item-has-children">
-               <a href="product">WHAT WE DO</a>
-            </li>
-            <li>
-               <a href="career menu-item-has-children">CARRER</a>
-               <ul class="dropdown">
+            <li class="has-children">
+               <a href="#" class="ab">ABOUT</a>
+               <ul class="dropdown sub-menu">
                   <li>
-                     <a href="ferrous">About Company</a>
+                     <a href="<?php echo base_url('ourstory'); ?>">COMAPNY</a>
                   </li>
                   <li>
-                     <a href="ferrous">Leadership</a>
+                     <a href="<?php echo base_url('career'); ?>">CARRER</a>
                   </li>
-                  <li>
-                     <a href="ferrous">Career</a>
-                  </li>
+
                </ul>
             </li>
             <li>
-               <a href="csr">SOCIAL RESPONSIBILITY</a>
+               <a href="<?php echo base_url('services'); ?>">WHAT WE DO</a>
+            </li>
+
+            <li>
+               <a href="<?php echo base_url('csr'); ?>">SOCIAL RESPONSIBILITY</a>
             </li>
             <li>
-               <a href="contact">CONTACT</a>
+               <a href="<?php echo base_url('contact'); ?>">CONTACT</a>
             </li>
          </ul>
          </nav>
@@ -159,8 +240,8 @@
    </div>
    <!------------------Header ends--------------------->
    <!-- Slider Section start -->
-   <div class="slider-one">
-      <div class="sliderbg-1" data-bg-color="#322fb3" data-bg-image="<?php echo base_url(''); ?>/images/banner-x.jpg">
+   <div class="slider-one " style="background: #181817;">
+      <div class="sliderbg-1" data-bg-image="<?php echo base_url(''); ?>images/hom.jpg">
       </div>
       <div class="custom-container">
          <div class="swiper sliderone animation-style-01">
@@ -173,10 +254,11 @@
                            <!-- Slider Content Start -->
                            <div class="slider-content" style="width:fit-content;">
                               <!-- <span class="subtitle">We Are Avers</span>  -->
-                              <h2 class="title">Pioneers of<br> Steel Trading.</h2>
+                              <h1 class="title">Pioneers of<br> Steel Trading.</h1>
                               <p class="slider-text" style="max-width:70%">Delivering unmatched quality and strength for over a decade. Your trusted partner in steel solutions.</p>
                               <br>
-                              <a href="services" class="btn-style-four" style="padding: 10px 20px;">Read More</a>
+                              <button href="<?php echo base_url('ourstory'); ?>" class="btn-slider"
+                                 style="padding: 10px 20px;">Read More</button>
                            </div>
                         </div>
                      </div>
@@ -191,10 +273,12 @@
                            <!-- Slider Content Start -->
                            <div class="slider-content" style="width:fit-content;">
                               <!-- <span class="subtitle">We Are Avers</span>  -->
-                              <h2 class="title">Grow Together.</h2>
+                              <h1 class="title">We Build <br />Stronger Future.</h1>
                               <p class="slider-text" style="max-width:70%">Building stronger communities through sustainable practices and shared growth.</p>
                               <br>
-                              <a href="csr" class="btn-style-four" style="padding: 10px 20px;">Read More</a>
+                              <button href="<?php echo base_url('ourstory'); ?>" class="btn-slider" style="padding: 10px 20px;">
+                                 Read More
+                              </button>
                            </div>
                         </div>
                      </div>
@@ -209,17 +293,18 @@
                            <!-- Slider Content Start -->
                            <div class="slider-content" style="width:fit-content;">
                               <!-- <span class="subtitle">We Are Avers</span>  -->
-                              <h2 class="title">Strength & Honor.</h2>
+                              <h1 class="title">Strength & Honor.</h1>
                               <p class="slider-text" style="max-width:70%">Forging a legacy of excellence with resilient steel and unwavering integrity.</p>
                               <br>
-                              <a href="ourstory" class="btn-style-four" style="padding: 10px 20px;">Read More</a>
+                              <button href="<?php echo base_url('ourstory'); ?>" class="btn-slider"
+                                 style="padding: 10px 20px;">Read More
+                              </button>
                            </div>
                         </div>
                      </div>
                   </div>
                   <!-- Single Slider End -->
                </div>
-
             </div>
             <!-- Swiper Pagination -->
             <div class="swiper-pagination sliderone-pagination"></div>
@@ -229,60 +314,50 @@
    </div>
    <!-- Slider Section End -->
    <!-- About Section Start -->
-   <div class="section-padding about-two">
-
-      <div class="container">
+   <div style="background:#181817 ; color:#fff;" class="section-padding about-two">
+      <div class="container" style="    position: relative;">
          <div class="row ">
-            <div class="col-lg-6">
+            <div class="col-lg-6" style="">
                <!-- Heading Start -->
                <div class="heading-one">
                   <div class="wow fadeIn" data-wow-duration="0.1s">
-                     <span class="heading-one-subtitle" style="    text-transform: uppercase;">3 Decades Of leadership</span>
+                     <span class="heading-one-subtitle" style="text-transform: uppercase; color:#ccc">3 Decades Of leadership</span>
                      <br><br>
-                     <h3 class="heading-one-title" style="    text-transform: uppercase;">Excellence in Metals <br> and Steel Trading</h3>
+                     <h1 class="heading-one-title" style="text-transform: uppercase; color:#fff">Excellence in Metals <br> and Steel Trading</h1>
                   </div>
-
                </div>
+              <img class="desk" src="images/glob.png" alt=""style=" width: auto;left: -6%; bottom: 0px; position: absolute; ">
                <!-- Heading End -->
             </div>
             <div class="col-lg-6">
                <div class="about-two-text wow fadeIn" data-wow-duration="0.1s">
                   <div class="row">
                      <div class="col-md-6">
-                        <p>
+                        <p style="color:#ccc">
                            <b>We have presence in 50+ countries with a sum of 750,000 MTs of scrap traded annually.</b>
                            <br /><br />
-
                            “Jaguar Steel & Coal Pte” is a distinguished market maker of ferrous and non-ferrous scrap products in containerised (TEUs) shipments
                            <br /><br />
                         </p>
                      </div>
                      <div class="col-md-6">
-                        <p>
-
+                        <p style="color:#ccc">
                            Our product range extends across steel, aluminium, rubber & paper scrap
                            <br /><br />
                            We are a trusted partner for the largest mills & foundries in South Asia & Far-East “
-
                         </p>
-                        <a href="ourstory" class="btn-style-one"><span>Learn More</span></a>
+                        <a href="<?php echo base_url('ourstory'); ?>" class="btn-style-one " style="color:#fff">Learn More </a>
                      </div>
                   </div>
-
-
                </div>
-               <br><br>
                <!-- About Images Start -->
-               <div class="about-two-images me-0">
+               <div class="about-two-images me-0 1">
                   <div class="about-two-images-one wow fadeIn" data-wow-duration="0.1s">
-                     <img class="js-tilt" src="<?php echo base_url(''); ?>/images/steel-2.jpg" alt="QualityImage">
-                     <div class="about-two-images-thumb gradient-2 wow flip" data-wow-duration="0.1s">
-                        <span class="text">Since</span>
-                        <span class="date">2012</span>
+                     <div style="    background: transparent;" class="custom-card">
+                        <div style="height:300px;clip-path: polygon(0 90%, 5% 100%, 100% 100%, 100% 0, 0 0);     background: transparent;" class="image-section">
+                           <img src="<?php echo base_url(''); ?>/images/bg122.jpg" alt="QualityImage">
+                        </div>
                      </div>
-                  </div>
-                  <div class="about-two-images-two wow fadeIn" data-wow-duration="0.1s">
-                     <img class="js-tilt" src="<?php echo base_url(''); ?>/images/steel.jpg" alt="QualityImage">
                   </div>
                </div>
             </div>
@@ -291,138 +366,79 @@
 
       </div>
    </div>
-
    <!-- About Section Start -->
    <!-- Service Section Start -->
-   <div class="service section-padding position-relative">
+   <div style="background:#f1f1f1" class="service section-padding position-relative">
       <div class="container">
          <div class="row">
-            <h4 class="heading-one-subtitle" style="    text-transform: uppercase;">Our Products</h4>
-            <br><br>
+            <h4 class="heading-one-subtitle" style="text-transform: uppercase;">Our Products</h4>
+            <br>
             <div class="col-lg-12 row wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".1s">
                <!-- Heading Start -->
-               <div class="col-md-6 text-start">
-
-                  <h1 class="heading-one-title" style="    text-transform: uppercase;">What we offer</h1>
-                  <br><br><br>
-                  <!-- <p>Kimod tempoer incididunt onomes sundo ritoma amar Lorem ipsum dolor sit amet, consectetur adipisicing</p> -->
+               <div class="col-md-6  text-start">
+                  <h1 class="heading-one-title" style="text-transform: uppercase;">What we offer</h1>
+                  <br>
                </div>
-               <div class="col-md-6 text-end">
-
-
-                  <a href="services" class="btn-style-one"><span>Learn More</span></a>
-
+               <div class="col-md-6  text-end desk">
+                  <a href="<?php echo base_url('services'); ?>" class="btn-style-one " style="color: #0b2266;"><span>Learn More</span></a>
                </div>
                <!-- Heading End -->
             </div>
+            <br>
          </div>
-         <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-2 row-cols-1 mb-n30">
-            <div class="col mb-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".1s">
-               <!-- Single Service Start -->
-               <div class="service-single">
-                  <div class="service-single-image">
-                     <div class="">
-                        <img src="<?php echo base_url(); ?>/images/ss1.png" alt="ServiceImage" width="100%">
-                     </div>
+         <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-2 row-cols-1 mb-n30 mt-md-0 mt-3">
 
+            <div class="col mb-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".3s">
+               <!-- Single Service Start -->
+               <div class="custom-card-service">
+                  <div class="image-section-service">
+                     <img src="<?php echo base_url(); ?>/images/ps.jpg" alt="ServiceImage" width="100%">
                   </div>
                   <div class="content">
-
-                     <h4 class="title">Ferrous Scrap </h4>
+                     <h4 class="title">Ferrous Scrap</h4>
                      <a href="services" class="service-single-white-content">
-                        <p> From the smallest foundries to the largest steelmakers, the world's most successful scrap consumers trust us to provide the raw material for their operations.</p>
+                        <p>From the smallest foundries to the largest steelmakers, the world's most successful scrap consumers trust us to provide the raw material for their operations.</p>
                      </a>
                   </div>
-
                </div>
                <!-- Single Service End -->
             </div>
             <div class="col mb-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".3s">
                <!-- Single Service Start -->
-
-               <div class="service-single">
-                  <div class="service-single-image">
-                     <div class="">
-                        <img src="<?php echo base_url(); ?>/images/ss2.png" alt="ServiceImage" width="100%">
-                     </div>
-
+               <div class="custom-card-service">
+                  <div class="image-section-service">
+                     <img src="<?php echo base_url(); ?>/images/nfs.jpg" alt="ServiceImage" width="100%">
                   </div>
                   <div class="content">
-
                      <h4 class="title">Non Ferrous Scrap</h4>
                      <a href="services" class="service-single-white-content">
                         <p>We also trade in non-ferrous scrap mainly Stainless Steel Scrap, Aluminium, Copper, Brass, Lead and Zinc.</p>
                      </a>
                   </div>
-
                </div>
-               
                <!-- Single Service End -->
             </div>
-            <div class="col mb-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".6s">
+            <div class="col mb-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".3s">
                <!-- Single Service Start -->
-               <div class="service-single">
-                  <div class="service-single-image">
-                     <div class="">
-                        <img src="<?php echo base_url(); ?>/images/ss3.png" alt="ServiceImage" width="100%">
-                     </div>
-
+               <div class="custom-card-service">
+                  <div class="image-section-service">
+                     <img src="<?php echo base_url(); ?>/images/fs.jpg" alt="ServiceImage" width="100%">
                   </div>
                   <div class="content">
-
-                     <h4 class="title">Paper Scrap </h4>
+                     <h4 class="title">Paper Scrap</h4>
                      <a href="services" class="service-single-white-content">
-                        <p>Old corrugated containers are one of the core business areas.
-                        The company is actively engaged in world-wide Trading of paper scrap.</p>
+                        <p>Old corrugated containers are one of the core business areas. The company is actively engaged in world-wide Trading of paper scrap.</p>
                      </a>
                   </div>
-
                </div>
-              
                <!-- Single Service End -->
             </div>
-         </div>
-      </div>
-    
 
-
-   </div>
-   
-   <!-- Service Section End -->
-   <br /><br /><br />
-   <br /><br /><br />
-   <!-- Support Section Start -->
-   <div class="support mousemove">
-      <div class="container">
-         <div class="support-bg">
-            <div class="support-bg-img">
-               <img src="<?php echo base_url(''); ?>/images/support/support-bg.png" alt="Support">
-            </div>
-            <div class="row">
-               <div class="col-md-6">
-                  <!-- Heading Start -->
-                  <div class="heading-one wow fadeIn" data-wow-duration="0.1s">
-                     <span class="heading-one-subtitle" style="color:#fff;    text-transform: uppercase;">Corporate Social Responsibility</span><br><br>
-                     <h3 class="heading-one-title"style="color:#fff;    text-transform: uppercase;">Going beyond environmental sustainability</h3>
-                     <p class="heading-one-text">Our CSR efforts extend beyond environmental sustainability. We are dedicated to making a positive impact on the communities where we operate through.
-                     </p>
-                     <br />
-                     <a href="csr" class="btn-style-one">
-                        <span>Learn More</span>
-
-                     </a>
-                  </div>
-                  <!-- Heading End -->
-               </div>
-               <div class="col-md-6">
-                  <div class="support-man wow fadeIn" data-wow-duration="0.7s">
-                     <img src="<?php echo base_url(''); ?>/images/support/support.jpg" alt="SupportMan">
-                  </div>
-               </div>
-            </div>
          </div>
       </div>
    </div>
+
+
    <!-- Support Section End -->
    <div class="section-padding testimonial-two scene">
       <div class="container">
@@ -432,13 +448,13 @@
                <div class="row">
                   <div class="row">
                      <div class="col-md-6">
-                     <span class="heading-one-subtitle" style="    text-transform: uppercase;">Testimonials</span><br><br>
-                     <h2 class="heading-one-title"style="    text-transform: uppercase;">What People Say</h2>
+                        <span class="heading-one-subtitle" style="    text-transform: uppercase;">Testimonials</span><br>
+                        <h2 class="heading-one-title" style="    text-transform: uppercase;">What People Say</h2>
                      </div>
                      <div class="col-md-6"></div>
                   </div>
-                 
-               </div><br><br>
+               </div>
+               <br>
                <!-- Heading End -->
             </div>
          </div>
@@ -454,7 +470,6 @@
                            <div class="user">
                               <div class="user-meta">
                                  <span class="name">JSW</span>
-
                               </div>
                            </div>
                         </div>
@@ -468,7 +483,6 @@
                            <div class="user">
                               <div class="user-meta">
                                  <span class="name">Kirloskar</span>
-
                               </div>
                            </div>
                         </div>
@@ -482,7 +496,6 @@
                            <div class="user">
                               <div class="user-meta">
                                  <span class="name">ISMT</span>
-
                               </div>
                            </div>
                         </div>
@@ -510,48 +523,61 @@
    </div>
    <!-- Testimonial Section End -->
    <!-- Brand Section Start -->
-   <div class="brand-four">
+   <div class="brand-four" style="padding: 20px 0;">
       <div class="container">
          <div class="row">
             <div class="col-12 wow fadeIn" fadeIndata-wow-duration=".1s" data-wow-delay=".1s">
-               <div class="brand-slider brand-style swiper">
-                  <div class="swiper-wrapper">
-                     <div class="swiper-slide">
-                        <!-- Single Brand Start -->
-                        <a class="brand-before" href="#"><img src="<?php echo base_url(''); ?>/images/brand//1.png" alt="Brand-Image"></a>
-                        <!-- Single Brand End -->
-                     </div>
-                     <div class="swiper-slide">
-                        <!-- Single Brand Start -->
-                        <a class="brand-before" href="#"><img src="<?php echo base_url(''); ?>/images/brand/2.png" alt="Brand-Image"></a>
-                        <!-- Single Brand End -->
-                     </div>
-                     <div class="swiper-slide">
-                        <!-- Single Brand Start -->
-                        <a class="brand-before" href="#"><img src="<?php echo base_url(''); ?>/images/brand/3.png" alt="Brand-Image"></a>
-                        <!-- Single Brand End -->
-                     </div>
-                     <div class="swiper-slide">
-                        <!-- Single Brand Start -->
-                        <a class="brand-before" href="#"><img src="<?php echo base_url(''); ?>/images/brand/4.png" alt="Brand-Image"></a>
-                        <!-- Single Brand End -->
-                     </div>
-                     <div class="swiper-slide">
-                        <!-- Single Brand Start -->
-                        <a class="brand-before" href="#"><img src="<?php echo base_url(''); ?>/images/brand/5.png" alt="Brand-Image"></a>
-                        <!-- Single Brand End -->
-                     </div>
+
+
+               <div class="splide" id="#shapeSlider" role="group" aria-label="Splide Basic HTML Example">
+                  <div class="splide__track">
+                     <ul class="splide__list">
+                     <li class="splide__slide">
+                           <a class="brand-before" href="#">
+                              <img src="<?php echo base_url(''); ?>/images/brand/2.png" alt="Brand-Image" style="100%">
+                           </a>
+                        </li>
+                        <li class="splide__slide">
+                           <a class="brand-before" href="#">
+                              <img src="<?php echo base_url(''); ?>/images/brand/5.png" alt="Brand-Image" style="100%">
+                           </a>
+                        </li>
+
+                        <li class="splide__slide">
+                           <a class="brand-before" href="#">
+                              <img src="<?php echo base_url(''); ?>/images/brand/3.png" alt="Brand-Image" style="100%">
+                           </a>
+                        </li>
+                        <li class="splide__slide">
+                           <a class="brand-before" href="#">
+                              <img src="<?php echo base_url(''); ?>/images/brand/1.png" alt="Brand-Image" style="100%">
+                           </a>
+                        </li>
+                       
+
+                        <li class="splide__slide">
+                           <a class="brand-before" href="#">
+                              <img src="<?php echo base_url(''); ?>/images/brand/4.png" alt="Brand-Image" style="100%">
+                           </a>
+                        </li>
+
+
+                     </ul>
                   </div>
                </div>
+
+
             </div>
          </div>
       </div>
    </div>
    <!-- Brand Section End -->
    <!-- Home Contact Form Start -->
-   <div class="home-contact">
+   <div class="home-contact d-none">
       <div class="container">
          <div class="row">
+            <div class="col-12">
+            </div>
             <div class="col-12">
                <div class="home-contact_wrapper">
                   <!-- Home Contact Content Start -->
@@ -595,7 +621,7 @@
                      <div class="form-single">
                         <textarea name="message" placeholder="Write message here"></textarea>
                      </div>
-                     <button type="submit" class="btn-style-four">Submit now</button>
+                     <button type="submit" class="btn-slider">Submit now</button>
                   </form>
                   <!-- Home Content Form End -->
                </div>
@@ -606,5 +632,51 @@
    <!-- Home Contact Form End -->
    <br /><br />
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+   document.addEventListener('DOMContentLoaded', function() {
+      new Splide('.splide', {
+         type: 'loop',
+         drag: 'free',
+         focus: 'center',
+         pagination: false,
+         perPage: 5,
+         gap: '10px',
+         autoScroll: {
+            speed: 2,
+         },
+         breakpoints: {
+            240: {
+               perPage: 2,
+            },
+            640: {
+               perPage: 3,
+            },
+            767: {
+               perPage: 3,
+            },
+            1024: {
+               perPage: 5,
+            },
+         },
+         focus: "center",
+      }).mount(window.splide.Extensions);
+   });
+
+   window.addEventListener('scroll', function() {
+      const header = document.getElementById('header');
+      const logo = document.getElementById('logo');
+
+      if (window.scrollY > 50) { // Adjust threshold as needed
+         header.classList.add('sticky');
+         logo.src = 'https://asayjewels.com/demoj/public/images/logo-main.png';
+         // Path to your colored logo
+      } else {
+         header.classList.remove('sticky');
+         logo.src = 'https://asayjewels.com/demoj/public/images/logo-white.png'; // Path to your transparent logo
+      }
+   });
+</script>
 
 </html>
