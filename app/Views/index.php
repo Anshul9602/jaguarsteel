@@ -315,18 +315,20 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
    <!-- Slider Section End -->
    <!-- About Section Start -->
    <div style="background:#181817 ; color:#fff;" class="section-padding about-two">
-      <div class="container" style="    position: relative;">
+      <div class="container" style="position: relative;">
          <div class="row ">
-            <div class="col-lg-6" style="">
+            <div class="col-lg-6">
                <!-- Heading Start -->
                <div class="heading-one">
                   <div class="wow fadeIn" data-wow-duration="0.1s">
                      <span class="heading-one-subtitle" style="text-transform: uppercase; color:#ccc">3 Decades Of leadership</span>
                      <br><br>
-                     <h1 class="heading-one-title" style="text-transform: uppercase; color:#fff">Excellence in Metals <br> and Steel Trading</h1>
+                     <h1 class="heading-one-title" style="text-transform: uppercase;color:#fff">Excellence in Metals <br> and Steel Trading</h1>
                   </div>
                </div>
-               <img src="<?php echo base_url(''); ?>images/bgpng.png" class="desk" height="300"style="opacity: 0.9; width: auto; left: -0%; bottom: 0px; position: absolute;">
+               <video playsinline="playsinline" autoplay="autoplay" loop="loop" muted="muted" style=" width: auto; left: -0%; bottom: 0px; position: absolute;width:350px;"preload="metadata" ><source src="images/1.mp4" type="video/mp4"></video>
+            
+             
                <!-- Heading End -->
             </div>
             <div class="col-lg-6">
