@@ -326,8 +326,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                      <h1 class="heading-one-title" style="text-transform: uppercase;color:#fff">Excellence in Metals <br> and Steel Trading</h1>
                   </div>
                </div>
-               <video playsinline="playsinline" autoplay="autoplay" loop="loop" muted="muted" style=" width: auto; left: -0%; bottom: 0px; position: absolute;width:350px;"preload="metadata" ><source src="images/1.mp4" type="video/mp4"></video>
-            
+               
              
                <!-- Heading End -->
             </div>
@@ -357,7 +356,10 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                   <div class="about-two-images-one wow fadeIn" data-wow-duration="0.1s">
                      <div style="    background: transparent;" class="custom-card">
                         <div style="height:300px;clip-path: polygon(0 90%, 5% 100%, 100% 100%, 100% 0, 0 0);     background: transparent;" class="image-section">
-                           <img src="<?php echo base_url(''); ?>/images/bg122.jpg" alt="QualityImage">
+                           <img class="d-none" src="<?php echo base_url(''); ?>/images/bg122.jpg" alt="QualityImage">
+
+                           <video playsinline="playsinline" autoplay="autoplay" loop="loop" muted="muted" style=" width: 100%; "preload="metadata" ><source src="images/3.mp4" type="video/mp4"></video>
+            
                         </div>
                      </div>
                   </div>
