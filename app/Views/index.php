@@ -358,7 +358,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         <div style="height:300px;clip-path: polygon(0 90%, 5% 100%, 100% 100%, 100% 0, 0 0);     background: transparent;" class="image-section">
                            <img class="d-none" src="<?php echo base_url(''); ?>/images/bg122.jpg" alt="QualityImage">
 
-                           <video playsinline="playsinline" autoplay="autoplay" loop="loop" muted="muted" style=" width: 100%; "preload="metadata" ><source src="images/3.mp4" type="video/mp4"></video>
+                           <video playsinline="playsinline" autoplay="autoplay" loop="loop" muted="muted" style=" width: 100%; "preload="metadata" ><source src="images/2.mp4" type="video/mp4"></video>
             
                         </div>
                      </div>

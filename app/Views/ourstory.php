@@ -274,7 +274,7 @@
                         <a href="https://twitter.com/" class="twitter"><i class="fab fa-twitter"></i></a>
                      </li>
                      <li>
-                        <a href="https://www.linkedin.com/in/akshay-kharbanda-3a8161129?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.linkedin.com/in/akshay-kharbanda-3a8161129?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="linkedin" target="blank"><i class="fab fa-linkedin-in"></i></a>
                      </li>
                   </ul>
                   <br><br>
